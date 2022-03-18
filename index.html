@@ -65,27 +65,48 @@
                 </ol>
                 <h2 id="part4" class="h-2">Courses:</h2>
                 <p>RS Schools Course «JavaScript/Front-end. Stage 0»
+                </p>
+                <p>RS Schools Course «JavaScript/Front-end. Stage 1»
                     <br> (in progress)
                 </p>
                 <h2 id="part5" class="h-2">Skills and Proficiency:</h2>
                 <ol class="list">
                     <li>HTML5 - beginner</li>
-                    <li>CSS3 - novice</li>
+                    <li>CSS3 - beginner</li>
+                    <li>JS - beginner</li>
                     <li>Git, GitHub - beginner</li>
                     <li>VS Code - beginner</li>
                 </ol>
 
                 <h2 id="part6" class="h-2">Projects:</h2>
                 <p><a href="https://iniuta.github.io/rsschool-cv/cv">RSSCHOOL-CV</a></p>
+                <p><a href="https://rolling-scopes-school.github.io/iniuta-JSFEPRESCHOOL/portfolio/">PORTFOLIO</a></p>
+                <p><a href="https://rolling-scopes-school.github.io/iniuta-JSFEPRESCHOOL/eco-sounds/">ECO-SOUNDS</a></p>
                 <h2 id="part7" class="h-2">Code example:</h2>
-                <p><i>The first task from Codewars</i></p>
+                <p><i>Code example from Codewars</i></p>
                 <pre>
             <code>
-                function multiply(a, b) {
-                    return a * b;
-                }
+                function mergeArrays(arr1, arr2) {
+                    return [... new Set(arr1.concat(arr2).sort((a,b) => a-b))]
+                  }
             </code>
                 </pre>
+
+                <pre>
+                    <code>
+                        function findMissing(arr1, arr2) {
+                            let sumArr1 = 0;
+                            let sumArr2 = 0;
+                            for (let i = 0; i < arr1.length; i++){
+                              sumArr1 = arr1[i] + sumArr1
+                            }
+                            for (let i = 0; i < arr2.length; i++){
+                              sumArr2 = arr2[i] + sumArr2
+                            }
+                            return sumArr1 - sumArr2
+                          }
+                    </code>
+                        </pre>
 
             </main>
         </div>
@@ -94,9 +115,8 @@
                 <h2 id="part8">Contact information:</h2>
                 <address>
                     <div>
-                        <!-- <div class="contact"> -->
                         <ul class="footer-contact-information">
-                            <li>Location: Poland, Wroclaw</li>
+                            <li>Location: Poland, Wrocław</li>
                             <li>Phone: +48 512-861-092</li>
                             <li>E-mail: innazolotkomoe@gmail.com</li>
                             <li>Discord:@Iniuta</li>
