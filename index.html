@@ -87,7 +87,7 @@
                 <pre>
             <code>
                 function mergeArrays(arr1, arr2) {
-                    return [... new Set(arr1.concat(arr2).sort((a,b) => a-b))]
+                    return [... new Set(arr1.concat(arr2).sort((a,b) = &gt; a-b))]
                   }
             </code>
                 </pre>
@@ -97,10 +97,10 @@
                         function findMissing(arr1, arr2) {
                             let sumArr1 = 0;
                             let sumArr2 = 0;
-                            for (let i = 0; i < arr1.length; i++){
+                            for (let i = 0; i &lt; arr1.length; i++){
                               sumArr1 = arr1[i] + sumArr1
                             }
-                            for (let i = 0; i < arr2.length; i++){
+                            for (let i = 0; i &lt; arr2.length; i++){
                               sumArr2 = arr2[i] + sumArr2
                             }
                             return sumArr1 - sumArr2
