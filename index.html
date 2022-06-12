@@ -5,131 +5,177 @@
     <meta charset="utf-8">
     <title>CV</title>
     <link rel="icon" href="./images/favicon3.png" type="image/png" sizes="48x48">
+    <link href="reset.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
-    <div class="flex-container">
-        <div class="flex-item item-1">
-            <header>
-                <img class="photo" src="./images/photo3.jpeg" alt="Photo" height="150" width="150">
+<body class="">
+
+    <header class="header-position">
+
+        <nav class="">
+            <ul class="navigation-position">
+
+                <li class="nav-text-decor">
+                    <a class="nav-link" href="#part1">Briefly about myself</a>
+                </li>
+
+                <li class="nav-text-decor">
+                    <a class="nav-link" href="#part2">Education</a>
+                </li>
+
+                <li class="nav-text-decor">
+                    <a class="nav-link" href="#part3">Languages</a>
+                </li>
+
+                <li class="nav-text-decor">
+                    <a class="nav-link" href="#part4">Courses</a>
+                </li>
+
+                <li class="nav-text-decor">
+                    <a class="nav-link" href="#part5">Skills and Proficiency</a>
+                </li>
+
+                <li class="nav-text-decor">
+                    <a class="nav-link" href="#part6">Projects</a>
+                </li>
+
+                <li class="nav-text-decor">
+                    <a class="nav-link" href="#part7">Code example</a>
+                </li>
+
+                <li class="nav-text-decor">
+                    <a class="nav-link" href="#part8">Contact information</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="main-position">
+
+        <section class="section-introduse">
+
+            <div class="img-name">
+                <img class="" src="./images/photo3.jpeg" alt="Photo" height="440" width="340">
                 <h1>Ina Klimenka</h1>
-                <ul class="menu">
-                    <li class="menu">
-                        <nav><a href="#part1">Briefly about myself</a></nav>
-                    </li>
-                    <li class="menu">
-                        <nav><a href="#part2">Education</a></nav>
-                    </li>
-                    <li class="menu">
-                        <nav><a href="#part3">Languages</a></nav>
-                    </li>
-                    <li class="menu">
-                        <nav><a href="#part4">Courses</a></nav>
-                    </li>
-                    <li class="menu">
-                        <nav><a href="#part5">Skills and Proficiency</a></nav>
-                    </li>
-                    <li class="menu">
-                        <nav><a href="#part6">Projects</a></nav>
-                    </li>
-                    <li class="menu">
-                        <nav><a href="#part7">Code example</a></nav>
-                    </li>
-                    <li class="menu">
-                        <nav><a href="#part8">Contact information</a></nav>
-                    </li>
+            </div>
+
+            <div class="about-myself">
+
+                <h2 id="part1" class="">Briefly about myself:</h2>
+
+                <p>
+                    I have a degree in psychology, <br>and my extensive experience in this area <br>helps me to
+                    easily find <br>a common language with different people <br>and interact well with them, <br>so I'm
+                    a good
+                    team player.
+                    <br>I'm, also, passionate about learning new things <br>and developing comprehensively.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="section-education">
+
+            <h2 id="part2" class="">Education:</h2>
+            <p>Francisk Skorina Gomel State University - <i>Psychologist</i></p>
+
+        </section>
+
+
+        <section class="section-languages">
+            <h2 id="part3" class="">Languages:</h2>
+            <ol class="">
+                <li>Russian - Native</li>
+                <li>Polish - Intermediate</li>
+                <li>English - Elementary</li>
+            </ol>
+        </section>
+
+        <section class="section-courses">
+
+            <h2 id="part4" class="">Courses:</h2>
+            <p>RS Schools Course «JavaScript/Front-end. Stage 0»
+            </p>
+            <p>RS Schools Course «JavaScript/Front-end. Stage 1»
+                <br> (in progress)
+            </p>
+        </section>
+
+        <section class="section-skills">
+
+            <h2 id="part5" class="">Skills and Proficiency:</h2>
+            <ol class="">
+                <li>HTML5 - beginner</li>
+                <li>CSS3 - beginner</li>
+                <li>JS - beginner</li>
+                <li>Git, GitHub - beginner</li>
+                <li>VS Code - beginner</li>
+            </ol>
+        </section>
+
+        <section class="section-projects">
+
+            <h2 id="part6" class="">Projects:</h2>
+            <p><a class="project-link" href="https://iniuta.github.io/rsschool-cv/cv">RSSCHOOL-CV</a></p>
+            <p><a class="project-link"
+                    href="https://rolling-scopes-school.github.io/iniuta-JSFEPRESCHOOL/portfolio/">PORTFOLIO</a></p>
+            <p><a class="project-link"
+                    href="https://rolling-scopes-school.github.io/iniuta-JSFEPRESCHOOL/eco-sounds/">ECO-SOUNDS</a></p>
+        </section>
+
+        <section class="section-code">
+
+            <h2 id="part7" class="">Code example:</h2>
+            <p><i>Code example from Codewars</i></p>
+
+            <pre>
+                        <code>
+                            function mergeArrays(arr1, arr2) {
+                                return [... new Set(arr1.concat(arr2).sort((a,b) = &gt; a-b))]
+                            }
+                        </code>
+                    </pre>
+
+            <pre>
+                        <code>
+                            function findMissing(arr1, arr2) {
+                                let sumArr1 = 0;
+                                let sumArr2 = 0;
+                                for (let i = 0; i &lt; arr1.length; i++){
+                                sumArr1 = arr1[i] + sumArr1
+                                }
+                                for (let i = 0; i &lt; arr2.length; i++){
+                                sumArr2 = arr2[i] + sumArr2
+                                }
+                                return sumArr1 - sumArr2
+                            }
+                        </code>
+                    </pre>
+        </section>
+
+    </main>
+
+    <footer>
+        <h2 id="part8">Contact information:</h2>
+        <address>
+            <div>
+                <ul class="">
+                    <li>Location: Poland, Wrocław</li>
+                    <li>E-mail: innazolotkomoe@gmail.com</li>
+                    <li>Discord:@Iniuta</li>
+                    <li>GitHub:<a class="" href="https://github.com/Iniuta">Iniuta</a></li>
                 </ul>
-            </header>
-        </div>
-        <div class="flex-item item-2">
-            <main>
-                <h2 id="part1" class="h-2">Briefly about myself:</h2>
-
-                <p>I have a degree in psychology, and my extensive experience in this area helps me to
-                    easily
-                    find</p>
-                <p>a common language with different people and interact well with them, so I'm a good
-                    team
-                    player.</p>
-                <p>I'm, also, passionate about learning new things and developing comprehensively.</p>
-
-                <h2 id="part2" class="h-2">Education:</h2>
-                <p>Francisk Skorina Gomel State University - <i>Psychologist</i></p>
-
-                <h2 id="part3" class="h-2">Languages:</h2>
-                <ol class="list">
-                    <li>Russian - Native</li>
-                    <li>Polish - Intermediate</li>
-                    <li>English - Elementary</li>
-                </ol>
-                <h2 id="part4" class="h-2">Courses:</h2>
-                <p>RS Schools Course «JavaScript/Front-end. Stage 0»
-                </p>
-                <p>RS Schools Course «JavaScript/Front-end. Stage 1»
-                    <br> (in progress)
-                </p>
-                <h2 id="part5" class="h-2">Skills and Proficiency:</h2>
-                <ol class="list">
-                    <li>HTML5 - beginner</li>
-                    <li>CSS3 - beginner</li>
-                    <li>JS - beginner</li>
-                    <li>Git, GitHub - beginner</li>
-                    <li>VS Code - beginner</li>
-                </ol>
-
-                <h2 id="part6" class="h-2">Projects:</h2>
-                <p><a href="https://iniuta.github.io/rsschool-cv/cv">RSSCHOOL-CV</a></p>
-                <p><a href="https://rolling-scopes-school.github.io/iniuta-JSFEPRESCHOOL/portfolio/">PORTFOLIO</a></p>
-                <p><a href="https://rolling-scopes-school.github.io/iniuta-JSFEPRESCHOOL/eco-sounds/">ECO-SOUNDS</a></p>
-                <h2 id="part7" class="h-2">Code example:</h2>
-                <p><i>Code example from Codewars</i></p>
-                <pre>
-            <code>
-                function mergeArrays(arr1, arr2) {
-                    return [... new Set(arr1.concat(arr2).sort((a,b) = &gt; a-b))]
-                  }
-            </code>
-                </pre>
-
-                <pre>
-                    <code>
-                        function findMissing(arr1, arr2) {
-                            let sumArr1 = 0;
-                            let sumArr2 = 0;
-                            for (let i = 0; i &lt; arr1.length; i++){
-                              sumArr1 = arr1[i] + sumArr1
-                            }
-                            for (let i = 0; i &lt; arr2.length; i++){
-                              sumArr2 = arr2[i] + sumArr2
-                            }
-                            return sumArr1 - sumArr2
-                          }
-                    </code>
-                        </pre>
-
-            </main>
-        </div>
-        <div class="flex-item item-3">
-            <footer>
-                <h2 id="part8">Contact information:</h2>
-                <address>
-                    <div>
-                        <ul class="footer-contact-information">
-                            <li>Location: Poland, Wrocław</li>
-                            <li>E-mail: innazolotkomoe@gmail.com</li>
-                            <li>Discord:@Iniuta</li>
-                            <li>GitHub:<a class="link-git" href="https://github.com/Iniuta">Iniuta</a></li>
-                        </ul>
-                        <div class="logo"> <img src="https://rs.school/images/rs_school_js.svg" alt="logo">
-                            <div class="link">2021 <a href="https://rs.school/js/">Курс «JavaScript/Front-end»</a>
-                            </div>
-                        </div>
+                <div class=""> <img src="https://rs.school/images/rs_school_js.svg" alt="logo">
+                    <div class="">2021 <a href="https://rs.school/js/">Курс «JavaScript/Front-end»</a>
                     </div>
-                </address>
-            </footer>
-        </div>
-    </div>
+                </div>
+            </div>
+        </address>
+    </footer>
+
 </body>
 
 </html>
