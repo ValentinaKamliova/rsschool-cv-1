@@ -9,7 +9,6 @@ body {
 }
 
 .header-position {
-    padding: 30px 40px;
     position: fixed;
     background-color: rgb(253, 251, 252);
     width: 100%;
@@ -17,7 +16,8 @@ body {
 
 .navigation-position {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 30px 40px;
     
 }
 
@@ -41,9 +41,11 @@ body {
 /* MAIN */
 
 :root {
-    --sections-color: rgb(47, 44, 37, 0.95);
+    --sections-color: rgb(43, 44, 44, 0.1);
     --sections-padding: 150px 40px 150px 40px;
-    --sections-margin: 70px 400px
+    --sections-margin: 70px 400px;
+    --sections-box-shadow: 2px 2px 20px 20px rgb(0 0 0 / 50%);
+    --sections-text-color: rgb(43, 44, 44, 0.7);
 }
 
 .main-position {
@@ -54,12 +56,14 @@ body {
 .section-introduse {
     display: flex;
     flex-direction: row;
-    background-color: var(--sections-color);
+    background-color: rgb(43, 44, 44, 0.98);
     margin: var(--sections-margin);
     padding: var(--sections-padding);
     padding-left: 40px;
     padding-right: 40px;
     justify-content: space-around;
+    box-shadow: var(--sections-box-shadow);
+    color: rgb(190, 168, 120, 0.7);
 }
 
 .img-name {
@@ -67,6 +71,9 @@ body {
     flex-direction: column;
     justify-content: space-around;
     gap: 2%;
+    box-shadow: 2px 2px 20px 20px rgb(0 0 0 / 40%);
+    padding-bottom: 4px;
+    padding-bottom: 10px;
 }
 
 .about-myself {
@@ -81,6 +88,8 @@ body {
     background-color: var(--sections-color);
     margin: var(--sections-margin);
     padding: var(--sections-padding);
+    box-shadow: var(--sections-box-shadow);
+    color: var(--sections-text-color);
 }
 
 .section-languages {
@@ -89,6 +98,8 @@ body {
     background-color: var(--sections-color);
     margin: var(--sections-margin);
     padding: var(--sections-padding);
+    box-shadow: var(--sections-box-shadow);
+    color: var(--sections-text-color);
 }
 
 .section-courses {
@@ -97,6 +108,8 @@ body {
     background-color: var(--sections-color);
     margin: var(--sections-margin);
     padding: var(--sections-padding);
+    box-shadow: var(--sections-box-shadow);
+    color: var(--sections-text-color);
 }
 
 .section-skills {
@@ -105,6 +118,8 @@ body {
     background-color: var(--sections-color);
     margin: var(--sections-margin);
     padding: var(--sections-padding);
+    box-shadow: var(--sections-box-shadow);
+    color: var(--sections-text-color);
 }
 
 .section-projects {
@@ -113,16 +128,18 @@ body {
     background-color: var(--sections-color);
     margin: var(--sections-margin);
     padding: var(--sections-padding);
+    box-shadow: var(--sections-box-shadow);
+    color: var(--sections-text-color);
 }
 
 .project-link {
     text-decoration: none;
-    color: rgb(190, 168, 120, 0.7);
+    color: var(--sections-text-color);
     cursor: pointer;
 }
 
 .project-link:hover {
-    filter: drop-shadow(0 0 3px #c0b449);
+    filter: drop-shadow(0 0 3px #151513);
     transition: all 0.5s;
 }
 
@@ -132,9 +149,18 @@ body {
     background-color: var(--sections-color);
     margin: var(--sections-margin);
     padding: var(--sections-padding);
+    box-shadow: var(--sections-box-shadow);
+    color: var(--sections-text-color);
 }
 
-h2, h1 {
+.title-h2 {
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(190, 168, 120);
+    text-align: center;
+}
+
+h1 {
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(190, 168, 120);
@@ -142,12 +168,52 @@ h2, h1 {
 }
 
 p {
-   color: rgb(190, 168, 120, 0.7);
    font-size: 2em; 
    padding-top: 20px;
 }
 
 ol {
-    color: rgb(190, 168, 120, 0.7);
+    color: var(--sections-text-color);
     font-size: 2em;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(253, 251, 252);
+    padding: 10px 40px;
+}
+
+.contact-information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3em;
+}
+
+.logo {
+    width: 100px;
+}
+
+.logo-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.github {
+    width: 100px;
+}
+
+.discord {
+    width: 35px;
+}
+
+.email {
+    width: 30px;
+}
+
+.text-email-discord {
+    text-decoration: none;
+    color: rgb(43, 44, 44, 0.98);
 }
