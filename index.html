@@ -78,52 +78,55 @@
         </section>
 
         <section class="section-education">
-
-            <h2 id="part2" class="title-h2">Education:</h2>
+            <span id="part2" class="hidden-id">E</span>
+            <h2 class="title-h2">Education:</h2>
             <p>Francisk Skorina Gomel State University - <i>Psychologist</i></p>
 
         </section>
 
 
         <section class="section-languages">
-            <h2 id="part3" class="title-h2">Languages:</h2>
-            <ol class="">
-                <li>Russian - Native</li>
-                <li>Polish - Intermediate</li>
-                <li>English - Elementary</li>
+            <span id="part3" class="hidden-id">L</span>
+            <h2 class="title-h2">Languages:</h2>
+            <ol>
+                <li class="padding-lang-skills">Russian - Native</li>
+                <li class="padding-lang-skills">Polish - Intermediate</li>
+                <li class="padding-lang-skills">English - Elementary (A-2)</li>
             </ol>
         </section>
 
         <section class="section-courses">
-
-            <h2 id="part4" class="title-h2">Courses:</h2>
-            <p>RS Schools Course «JavaScript/Front-end. Stage 0»
-            </p>
-            <p>RS Schools Course «JavaScript/Front-end. Stage 1»
-                <br> (in progress)
-            </p>
+            <span id="part4" class="hidden-id">C</span>
+            <h2 class="title-h2">Courses:</h2>
+            <p>RS Schools Course «JavaScript/Front-end. Stage 0»</p>
+            <p>RS Schools Course «JavaScript/Front-end. Stage 1»</p>
         </section>
 
         <section class="section-skills">
-
-            <h2 id="part5" class="title-h2">Skills and Proficiency:</h2>
+            <span id="part5" class="hidden-id">S</span>
+            <h2 class="title-h2">Skills and Proficiency:</h2>
             <ol class="">
-                <li>HTML5 - beginner</li>
-                <li>CSS3 - beginner</li>
-                <li>JS - beginner</li>
-                <li>Git, GitHub - beginner</li>
-                <li>VS Code - beginner</li>
+                <li class="padding-lang-skills">HTML5 - beginner</li>
+                <li class="padding-lang-skills">CSS3 - beginner</li>
+                <li class="padding-lang-skills">JS - beginner</li>
+                <li class="padding-lang-skills">Git, GitHub - beginner</li>
+                <li class="padding-lang-skills">VS Code - beginner</li>
             </ol>
         </section>
 
         <section class="section-projects">
+            <span id="part6" class="hidden-id">P</span>
+            <h2 class="title-h2">Projects:</h2>
 
-            <h2 id="part6" class="title-h2">Projects:</h2>
-            <p><a class="project-link" href="https://iniuta.github.io/rsschool-cv/cv">RSSCHOOL-CV</a></p>
-            <p><a class="project-link"
-                    href="https://rolling-scopes-school.github.io/iniuta-JSFEPRESCHOOL/portfolio/">PORTFOLIO</a></p>
-            <p><a class="project-link"
-                    href="https://rolling-scopes-school.github.io/iniuta-JSFEPRESCHOOL/eco-sounds/">ECO-SOUNDS</a></p>
+                <div class="img-projects">
+                    <a class="project-link" href="https://rolling-scopes-school.github.io/iniuta-JSFEPRESCHOOL/portfolio/">
+                        <img src="./images/project-portfolio.png" alt="project-portfolio" width="250px" height="150px" title="PORTFOLIO">
+                    </a>
+                    <a class="project-link" href="https://rolling-scopes-school.github.io/iniuta-JSFEPRESCHOOL/eco-sounds/">
+                        <img src="./images/project-ecosounds.png" alt="project-ecosounds" width="250px" height="150px" title="ECO-SOUNDS">
+                    </a>
+                </div>
+
         </section>
 
         <section class="section-code">
@@ -132,59 +135,55 @@
             <p><i>Code example from Codewars</i></p>
 
             <pre>
-                        <code>
-                            function mergeArrays(arr1, arr2) {
-                                return [... new Set(arr1.concat(arr2).sort((a,b) = &gt; a-b))]
-                            }
-                        </code>
-                    </pre>
+                <code>
+                    function findMissing(arr1, arr2) {
+                        let sumArr1 = 0;
+                        let sumArr2 = 0;
 
-            <pre>
-                        <code>
-                            function findMissing(arr1, arr2) {
-                                let sumArr1 = 0;
-                                let sumArr2 = 0;
-                                for (let i = 0; i &lt; arr1.length; i++){
-                                sumArr1 = arr1[i] + sumArr1
-                                }
-                                for (let i = 0; i &lt; arr2.length; i++){
-                                sumArr2 = arr2[i] + sumArr2
-                                }
-                                return sumArr1 - sumArr2
-                            }
-                        </code>
-                    </pre>
+                        for (let i = 0; i &lt; arr1.length; i++){
+                            sumArr1 = arr1[i] + sumArr1
+                        }
+
+                        for (let i = 0; i &lt; arr2.length; i++){
+                            sumArr2 = arr2[i] + sumArr2
+                        }
+
+                        return sumArr1 - sumArr2
+                    }
+                </code>
+            </pre>
         </section>
 
     </main>
 
     <footer>
-            <ul class="contact-information">
-                <li>
-                    <a class="" href="https://github.com/Iniuta">
-                        <img class="github" src="/images/githubpng.png">
-                    </a>
-                </li>
-                <li>
-                    <a class="text-email-discord" href="https://discord.com/channels/@me">
-                        <img class="discord" src="/images/discord2.png">
-                        @Iniuta
-                     </a>
-                </li>
-                <li>
-                    <a class="text-email-discord" href="mailto:innazolotkomoe@gmail.com">
-                        <img id="part8" class="email" src="/images/email2.png" alt="email">
-                        innazolotkomoe@gmail.com
-                    </a>
-                </li>
-                <li class="logo-flex">
-                    <a href="https://rs.school/js/">
-                        <img class="logo" src="https://rs.school/images/rs_school_js.svg" alt="logo" title="Курс «JavaScript/Front-end»">
-                    </a>
-                    ©2022
-                </li>
+        <ul class="contact-information">
+            <li>
+                <a class="" href="https://github.com/Iniuta">
+                    <img class="github" src="/images/githubpng.png" alt="logo-github">
+                </a>
+            </li>
+            <li>
+                <a class="text-email-discord" href="https://discord.com/channels/@me">
+                    <img class="discord" src="/images/discord2.png" alt="logo-discord">
+                    @Iniuta
+                </a>
+            </li>
+            <li>
+                <a class="text-email-discord" href="mailto:innazolotkomoe@gmail.com">
+                    <img id="part8" class="email" src="/images/email2.png" alt="email">
+                    innazolotkomoe@gmail.com
+                </a>
+            </li>
+            <li class="logo-flex">
+                <a href="https://rs.school/js/">
+                    <img class="logo" src="https://rs.school/images/rs_school_js.svg" alt="logo"
+                        title="Курс «JavaScript/Front-end»">
+                </a>
+                ©2022
+            </li>
 
-            </ul>
+        </ul>
     </footer>
 
 </body>

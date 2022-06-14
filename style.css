@@ -42,7 +42,7 @@ body {
 
 :root {
     --sections-color: rgb(43, 44, 44, 0.1);
-    --sections-padding: 150px 40px 150px 40px;
+    --sections-padding: 100px 40px 150px 40px;
     --sections-margin: 70px 400px;
     --sections-box-shadow: 2px 2px 20px 20px rgb(0 0 0 / 50%);
     --sections-text-color: rgb(43, 44, 44, 0.7);
@@ -56,6 +56,7 @@ body {
 .section-introduse {
     display: flex;
     flex-direction: row;
+    gap: 5%;
     background-color: rgb(43, 44, 44, 0.98);
     margin: var(--sections-margin);
     padding: var(--sections-padding);
@@ -122,6 +123,10 @@ body {
     color: var(--sections-text-color);
 }
 
+.padding-lang-skills {
+    padding-top: 3%;
+}
+
 .section-projects {
     display: flex;
     flex-direction: column;
@@ -133,14 +138,23 @@ body {
 }
 
 .project-link {
-    text-decoration: none;
-    color: var(--sections-text-color);
     cursor: pointer;
 }
 
 .project-link:hover {
     filter: drop-shadow(0 0 3px #151513);
     transition: all 0.5s;
+}
+
+.padding-projects {
+    padding-top: 5%;
+}
+
+.img-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10%;
 }
 
 .section-code {
@@ -158,6 +172,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     color: rgb(190, 168, 120);
     text-align: center;
+    font-variant: small-caps;
 }
 
 h1 {
@@ -175,6 +190,22 @@ p {
 ol {
     color: var(--sections-text-color);
     font-size: 2em;
+    padding-top: 4%;
+}
+
+pre {
+    background-color: rgba(77, 182, 172, 0.1);
+    border-left: 8px solid rgba(0, 77, 64, 0.4);
+    color: rgba(100, 30, 22, 0.8);
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-variant: small-caps;
+    margin-top: 5%;
+}
+
+.hidden-id {
+    color: rgb(224, 224, 224);
 }
 
 /* FOOTER */
