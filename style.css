@@ -65,6 +65,7 @@ body {
     justify-content: space-around;
     box-shadow: var(--sections-box-shadow);
     color: rgb(190, 168, 120, 0.7);
+    border-radius: 5px;
 }
 
 .img-name {
@@ -72,9 +73,15 @@ body {
     flex-direction: column;
     justify-content: space-around;
     gap: 2%;
-    box-shadow: 2px 2px 20px 20px rgb(0 0 0 / 40%);
+    border-radius: 5px;
+    box-shadow: 4px 0px 7px 7px rgb(0 0 0 / 28%);
     padding-bottom: 4px;
     padding-bottom: 10px;
+}
+
+.unsplash {
+    border-radius: 5px;
+    box-shadow: 4px 0px 7px 7px rgb(0 0 0 / 28%);
 }
 
 .about-myself {
@@ -91,6 +98,7 @@ body {
     padding: var(--sections-padding);
     box-shadow: var(--sections-box-shadow);
     color: var(--sections-text-color);
+    border-radius: 5px;
 }
 
 .section-languages {
@@ -101,6 +109,7 @@ body {
     padding: var(--sections-padding);
     box-shadow: var(--sections-box-shadow);
     color: var(--sections-text-color);
+    border-radius: 5px;
 }
 
 .section-courses {
@@ -111,6 +120,7 @@ body {
     padding: var(--sections-padding);
     box-shadow: var(--sections-box-shadow);
     color: var(--sections-text-color);
+    border-radius: 5px;
 }
 
 .section-skills {
@@ -121,6 +131,7 @@ body {
     padding: var(--sections-padding);
     box-shadow: var(--sections-box-shadow);
     color: var(--sections-text-color);
+    border-radius: 5px;
 }
 
 .padding-lang-skills {
@@ -135,6 +146,7 @@ body {
     padding: var(--sections-padding);
     box-shadow: var(--sections-box-shadow);
     color: var(--sections-text-color);
+    border-radius: 5px;
 }
 
 .project-link {
@@ -165,6 +177,7 @@ body {
     padding: var(--sections-padding);
     box-shadow: var(--sections-box-shadow);
     color: var(--sections-text-color);
+    border-radius: 5px;
 }
 
 .title-h2 {
@@ -202,6 +215,7 @@ pre {
     font-size: 15px;
     font-variant: small-caps;
     margin-top: 5%;
+    border-radius: 5px;
 }
 
 .hidden-id {
